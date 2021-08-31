@@ -1,1 +1,1 @@
-# SMUGraphics-Fall-21
+# GraphicsLab
