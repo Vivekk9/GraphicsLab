@@ -4,7 +4,7 @@ using namespace std;
 
 int main(int, char**){
 
-    //Hello world
+    //Hello Cmake
 
     return 0;
 }
