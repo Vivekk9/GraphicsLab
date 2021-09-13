@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.10)
 project(GraphicsLab)
 
 #--- Subprojects
-add_subdirectory(hello)
+#add_subdirectory(hello)
 add_subdirectory(vectors)
 
 #--- C++ standard
