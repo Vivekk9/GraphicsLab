@@ -9,11 +9,14 @@ include(common/config.cmake)
 include(common/Eigen.cmake)
 include(common/OpenCV.cmake)
 
+
 #--- Subprojects
 #add_subdirectory(hello)
 #add_subdirectory(vectors)
 #add_subdirectory(raytrace)
-add_subdirectory(antialiasing)
+#add_subdirectory(antialiasing)
+add_subdirectory(rasterize)
+
 
 #--- C++ standard
 set(CMAKE_CXX_STANDARD 11)
