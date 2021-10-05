@@ -53,7 +53,7 @@ void rasterize(Triangle t, Image &image) {
             // Location of fragment in image space            
             Vec3 pt = Vec3(i, j, 0.0);            
 
-            //Task 2: Calculate barycentric coordinates of the fragment within current triangle (15%). Use triangle areas for Barycentric coordinate computation. Refer to the slides for details.
+            //Task 2: Calculate barycentric coordinates of the fragment within current triangle (10%). Use triangle areas for Barycentric coordinate computation. Refer to the slides for details.
             //float alpha = ?
 			//float beta = ?
             //float gamma = ?
@@ -122,12 +122,13 @@ void rasterize(Line l, Image &image) {
 
         //TODO: the Bresenham's/midpoint algorithm (15%)
         int y = pixelStartY;
+		//float d = ?
         int yDelta = (pixelEndY - pixelStartY) > 0 ? 1 : -1;
         for (int x = pixelStartX; x < pixelEndX; ++ x)
         {
             
            //TODO: Complete this part. Color the pixel (x, y) with red. OpenCV BGR order, we follow RGB-->so blue() will display red()		   
-		   //increment y based on the midpoint check- use line equation to check whether the midpoint lies above or below the line (Refer to the slides)
+		   //increment y based on the midpoint check- use the d value to check whether the midpoint lies above or below the line (Refer to the slides)
         }
     }
     else{
@@ -150,11 +151,12 @@ void rasterize(Line l, Image &image) {
 
         //the midpoint algorithm (15%)
         int x = pixelStartX;
+		//flat d = ?
         int xDelta = (pixelEndX - pixelStartX) > 0 ? 1 : -1;
         for (int y = pixelStartY; y < pixelEndY; ++ y)        {
             
 			//TODO: Complete this part. Color the pixel (x, y) with red. OpenCV BGR order, we follow RGB-->so blue() will display red()		 
-		   //increment x based on the midpoint check- use line equation to check whether the midpoint lies above or below the line (Refer to the slides)
+		   //increment x based on the midpoint check- use the d value to check whether the midpoint lies above or below the line (Refer to the slides)
             
         }
     }
