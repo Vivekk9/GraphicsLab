@@ -21,7 +21,8 @@ include(common/GLFW.cmake)
 #add_subdirectory(raytrace)
 #add_subdirectory(antialiasing)
 #add_subdirectory(rasterize)
-add_subdirectory(shaders)
+#add_subdirectory(shaders)
+add_subdirectory(transform)
 
 
 #--- C++ standard
