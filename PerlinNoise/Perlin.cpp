@@ -28,21 +28,22 @@ Vec2 Gradient(int index) {
 	//index is the value from the permutation table
 	int h = index & 7;
 	if (h == 0)
-		return  Vec2(1.0, 1.0);
+		return  Vec2(1.0, 0.0);
 	else if (h == 1)
-		return  Vec2(-1.0, 1.0);
-	else if (h == 2)
-		return  Vec2(1.0, -1.0);
-	else if (h == 3)
-		return  Vec2(-1.0, -1.0);
-	else if (h == 4)
 		return Vec2(0.707, 0.707);
-	else if (h == 5)
+	else if (h == 2)
+		return  Vec2(0.0, 1.0);
+	else if (h == 3)
 		return Vec2(-0.707, 0.707);
-	else if (h == 6)
-		return Vec2(0.707, -0.707);
-	else
+	else if (h == 4)
+		return  Vec2(-1.0, 0.0);
+	else if (h == 5)
 		return Vec2(-0.707, -0.707);
+	else if (h == 6)
+		return Vec2(0.0, -1.0);
+	else
+		return Vec2(0.707, -0.707);
+		
 }
 
 //TODO3: Complete the following noise generation function. THe function takes three coordinates of the sample point and retirns the noise vlaue at that point. 
