@@ -24,7 +24,7 @@ include(common/GLFW.cmake)
 #add_subdirectory(shaders)
 #add_subdirectory(transform)
 #add_subdirectory(PerlinNoise)
-add_subdirectory(Terrains)
+add_subdirectory(VertexDisplacement)
 
 #-----GLSL examples
 #add_subdirectory(apps/Ex1_Simple)
