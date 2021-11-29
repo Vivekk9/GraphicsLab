@@ -20,35 +20,32 @@ void main() {
    
    //TODO1: Spherical mapping: find out _phi and _theta
    
-   //float _phi = ?;
-   //float _theta =?;  
+   //float u = ______________;
+   //float v = ______________;  
    
    
    //TODO2: Heightwise texturing and blending of textures
-   if (fpoint.y > neck_level){   
-       // color = ?;   
+   /*if (fpoint.y > neck_level){   
+        color = _____________________;   
    } else if((fpoint.y > hip_level) && (fpoint.y < neck_level)){
-            
-
-            // Calculate blend factor
-            //float halfDistance = ?;
-
-            if (fpoint.y < (hip_level + halfDistance)) {
+        float halfDistance = ___________________;
+		if (fpoint.y < (hip_level + halfDistance)) {
 
                 // Blend with water
-                //float pos = ?;
-                //float posScaled = float(pos / halfDistance);
-                //color = ?;
+                float pos = __________________________;
+                float posScaled = _____________________;
+                color = (texture(sand, vec2(u,v)) * (posScaled))+(texture(water, vec2(u,v)) * (1 - posScaled));
             } else {
 
                 // Blend with grass
-                //float pos = ?;
-                //float posScaled = ?;
-                //color = ?;
+                float pos = ______________________;
+                float posScaled = ________________;
+                color = ________________________________________;
             }
+            
    } else if(fpoint.y < hip_level){
-        color = ?;  
-   }
+        color = ____________________;  
+   }*/
 
     color = vec4(O,1);
     
